@@ -31,23 +31,23 @@ export default function App() {
             <Route path="/" element={<Home onOpenSpeedCheck={() => setSpeedCheckOpen(true)} />} />
             
             {/* Reviews Category & Articles */}
-            <Route path="/reviews" element={<CategoryView />} />
+            <Route path="/reviews" element={<CategoryView category="reviews" />} />
             <Route path="/reviews/:slug" element={<ArticleView />} />
 
             {/* Blog Category & Articles */}
-            <Route path="/blog" element={<CategoryView />} />
+            <Route path="/blog" element={<CategoryView category="blog" />} />
             <Route path="/blog/:slug" element={<ArticleView />} />
 
             {/* Common Problems Category & Articles */}
-            <Route path="/problems" element={<CategoryView />} />
+            <Route path="/problems" element={<CategoryView category="problems" />} />
             <Route path="/problems/:slug" element={<ArticleView />} />
 
             {/* How-To Guides Category & Articles */}
-            <Route path="/guides" element={<CategoryView />} />
+            <Route path="/guides" element={<CategoryView category="guides" />} />
             <Route path="/guides/:slug" element={<ArticleView />} />
 
             {/* Blogs Category & Articles */}
-            <Route path="/blogs" element={<CategoryView />} />
+            <Route path="/blogs" element={<CategoryView category="blogs" />} />
             <Route path="/blogs/:slug" element={<ArticleView />} />
 
             {/* Trust & Legal Pages */}

@@ -1,12 +1,17 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useLocation, Link } from 'react-router-dom';
 import { ALL_ARTICLES, CATEGORIES } from '../data/siteData';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { Clock, ArrowRight } from 'lucide-react';
 
-export default function CategoryView() {
+export default function CategoryView({ category: propCategory }) {
   const { categorySlug } = useParams();
-  const catKey = categorySlug || 'reviews';
+  const location = useLocation();
+
+  // Extract category from prop, params, or pathname (e.g. /blogs -> blogs)
+  const pathCategory = location.pathname.replace(/^\//, '').split('/')[0];
+  const catKey = propCategory || categorySlug || pathCategory || 'reviews';
+
   const categoryInfo = CATEGORIES[catKey] || {
     title: "All Guides & Articles",
     description: "Browse all PC optimization guides, reviews, and repair tutorials."
