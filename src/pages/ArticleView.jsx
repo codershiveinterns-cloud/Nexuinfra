@@ -111,46 +111,6 @@ export default function ArticleView() {
               Back to {article.categoryLabel || 'Blogs'}
             </Link>
           </div>
-
-          {/* INDEPENDENT TESTING & RECOMMENDED NEXT STEPS */}
-          <div className="article-next-steps-card">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ width: '40px', height: '40px', borderRadius: '10px', backgroundColor: 'rgba(2, 132, 199, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-accent-light)' }}>
-                <ShieldCheck size={24} />
-              </div>
-              <div>
-                <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--color-primary)' }}>Nexuinfra Testing & Research Standards</h3>
-                <span style={{ fontSize: '0.82rem', color: 'var(--color-muted)' }}>Independent benchmarks & Windows performance research</span>
-              </div>
-            </div>
-
-            <p style={{ fontSize: '0.95rem', color: 'var(--color-text)', lineHeight: '1.6', marginBottom: '20px' }}>
-              Our lab independently tests Windows speed optimization utilities, registry repair engines, and junk file cleaners across standardized test environments. Explore full benchmarks or troubleshoot specific PC issues using our verified guides:
-            </p>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px' }}>
-              <Link to="/reviews" className="next-step-box">
-                <div style={{ color: 'var(--color-accent-light)', fontWeight: '700', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Layers size={16} /> Software Reviews
-                </div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--color-muted)', margin: 0 }}>Side-by-side performance benchmarks of top PC cleaners.</p>
-              </Link>
-
-              <Link to="/blog" className="next-step-box">
-                <div style={{ color: '#eab308', fontWeight: '700', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Zap size={16} /> Speed Fixes
-                </div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--color-muted)', margin: 0 }}>Actionable guides to eliminate Windows lag & startup delays.</p>
-              </Link>
-
-              <Link to="/problems" className="next-step-box">
-                <div style={{ color: '#ef4444', fontWeight: '700', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <AlertTriangle size={16} /> System Repair
-                </div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--color-muted)', margin: 0 }}>Fix blue screens, full C drive, and stuck Windows updates.</p>
-              </Link>
-            </div>
-          </div>
         </main>
 
         {/* Sidebar */}
