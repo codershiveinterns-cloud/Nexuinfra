@@ -91,6 +91,7 @@ export default function Navbar({ onOpenSpeedCheck }) {
                 </Link>
                 <div className="dropdown-menu">
                   <div className="dropdown-header">TECH BLOGS</div>
+                  <Link to="/blogs/pchealthlens-review-scan-score-restore" className="dropdown-item">PCHealthLens Review: Diagnose Before You Delete</Link>
                   <Link to="/blogs/top-10-pc-performance-myths-debunked" className="dropdown-item">Top 10 PC Myths Debunked</Link>
                   <Link to="/blogs/windows-11-24h2-update-performance-review" className="dropdown-item">Windows 11 24H2 Speed Review</Link>
                   <Link to="/blogs/ssd-vs-hdd-optimization-guide-2026" className="dropdown-item">SSD vs HDD Tuning Guide</Link>
