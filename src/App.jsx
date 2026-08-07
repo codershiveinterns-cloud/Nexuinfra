@@ -46,6 +46,10 @@ export default function App() {
             <Route path="/guides" element={<CategoryView />} />
             <Route path="/guides/:slug" element={<ArticleView />} />
 
+            {/* Blogs Category & Articles */}
+            <Route path="/blogs" element={<CategoryView />} />
+            <Route path="/blogs/:slug" element={<ArticleView />} />
+
             {/* Trust & Legal Pages */}
             <Route path="/about" element={<LegalPage />} />
             <Route path="/affiliate-disclosure" element={<LegalPage />} />

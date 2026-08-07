@@ -95,6 +95,23 @@ export default function Navbar({ onOpenSpeedCheck }) {
                   <Link to="/guides/clear-junk-files-windows" className="dropdown-item">Clear Junk Files in Windows 11/10</Link>
                   <Link to="/guides/speed-up-boot-time" className="dropdown-item">Speed Up Boot Time Hacks</Link>
                   <Link to="/guides/optimize-pc-for-gaming" className="dropdown-item">Optimize PC for High Gaming FPS</Link>
+                  <Link to="/guides/fix-corrupted-windows-system-files" className="dropdown-item">Repair System Files (SFC & DISM)</Link>
+                  <Link to="/guides/disable-windows-telemetry-privacy" className="dropdown-item">Disable Windows Telemetry & Privacy</Link>
+                </div>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/blogs" className={`nav-link ${location.pathname.startsWith('/blogs') ? 'active' : ''}`}>
+                  <BookOpen size={15} /> Blogs <ChevronDown size={13} />
+                </Link>
+                <div className="dropdown-menu">
+                  <div className="dropdown-header">TECH BLOGS</div>
+                  <Link to="/blogs/top-10-pc-performance-myths-debunked" className="dropdown-item">Top 10 PC Myths Debunked</Link>
+                  <Link to="/blogs/windows-11-24h2-update-performance-review" className="dropdown-item">Windows 11 24H2 Speed Review</Link>
+                  <Link to="/blogs/ssd-vs-hdd-optimization-guide-2026" className="dropdown-item">SSD vs HDD Tuning Guide</Link>
+                  <Link to="/blogs/how-to-fix-high-ram-usage-windows-11" className="dropdown-item">Fix High RAM Usage in Windows 11</Link>
+                  <Link to="/blogs/is-ccleaner-safe-in-2026" className="dropdown-item">Is CCleaner Safe in 2026?</Link>
+                  <Link to="/blogs/ultimate-pc-maintenance-checklist-2026" className="dropdown-item">2026 PC Maintenance Checklist</Link>
                 </div>
               </li>
 
@@ -136,9 +153,10 @@ export default function Navbar({ onOpenSpeedCheck }) {
             <div className="mobile-nav-group">
               <div className="mobile-group-title">NAVIGATION</div>
               <Link to="/reviews" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">🏆 Software Reviews</Link>
-              <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">⚡ Fix Slow PC (Blog)</Link>
+              <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">⚡ Fix Slow PC</Link>
               <Link to="/problems" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">⚠️ Common PC Problems</Link>
               <Link to="/guides" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">📘 How-To Guides</Link>
+              <Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">📝 Blogs</Link>
               <Link to="/affiliate-disclosure" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">🛡️ Affiliate Disclosure</Link>
             </div>
 

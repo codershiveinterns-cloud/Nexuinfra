@@ -58,6 +58,19 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Tech Blogs */}
+          <div className="footer-column">
+            <h4>Tech Blogs</h4>
+            <ul className="footer-links">
+              <li><Link to="/blogs/top-10-pc-performance-myths-debunked">PC Performance Myths</Link></li>
+              <li><Link to="/blogs/windows-11-24h2-update-performance-review">Windows 11 24H2 Review</Link></li>
+              <li><Link to="/blogs/ssd-vs-hdd-optimization-guide-2026">SSD vs HDD Tuning</Link></li>
+              <li><Link to="/blogs/how-to-fix-high-ram-usage-windows-11">Fix High RAM Usage</Link></li>
+              <li><Link to="/blogs/is-ccleaner-safe-in-2026">Is CCleaner Safe?</Link></li>
+              <li><Link to="/blogs/ultimate-pc-maintenance-checklist-2026">PC Maintenance Checklist</Link></li>
+            </ul>
+          </div>
+
           {/* Trust & Legal Links */}
           <div className="footer-column">
             <h4>Trust & Disclosure</h4>
