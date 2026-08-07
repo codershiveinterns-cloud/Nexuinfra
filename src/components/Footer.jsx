@@ -32,45 +32,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Category Links */}
-          <div className="footer-column">
-            <h4>Software Reviews</h4>
-            <ul className="footer-links">
-              <li><Link to="/reviews/best-pc-cleaner-2026">Best PC Cleaner 2026</Link></li>
-              <li><Link to="/reviews/wise-care-365-review">Wise Care 365 Review</Link></li>
-              <li><Link to="/reviews/wisecleaner-vs-ccleaner">WiseCleaner vs CCleaner</Link></li>
-              <li><Link to="/reviews/wisecleaner-vs-iobit">WiseCleaner vs IObit</Link></li>
-              <li><Link to="/reviews/wise-data-recovery-review">Wise Data Recovery</Link></li>
-              <li><Link to="/reviews/best-free-registry-cleaner">Best Registry Cleaner</Link></li>
-            </ul>
-          </div>
-
-          {/* Troubleshoot Links */}
-          <div className="footer-column">
-            <h4>Fix PC Slowdowns</h4>
-            <ul className="footer-links">
-              <li><Link to="/blog/why-is-my-computer-so-slow">Why Computer Is Slow</Link></li>
-              <li><Link to="/blog/windows-11-running-slow-10-fixes">Windows 11 Speed Fixes</Link></li>
-              <li><Link to="/blog/pc-freezing-lagging-solutions">PC Freezing & Lagging</Link></li>
-              <li><Link to="/blog/high-cpu-disk-usage-fix">100% CPU/Disk Usage</Link></li>
-              <li><Link to="/blog/laptop-overheating-fixes">Laptop Overheating</Link></li>
-              <li><Link to="/blog/startup-taking-too-long-fix">Speed Up Startup</Link></li>
-            </ul>
-          </div>
-
-          {/* Tech Blogs */}
-          <div className="footer-column">
-            <h4>Tech Blogs</h4>
-            <ul className="footer-links">
-              <li><Link to="/blogs/top-10-pc-performance-myths-debunked">PC Performance Myths</Link></li>
-              <li><Link to="/blogs/windows-11-24h2-update-performance-review">Windows 11 24H2 Review</Link></li>
-              <li><Link to="/blogs/ssd-vs-hdd-optimization-guide-2026">SSD vs HDD Tuning</Link></li>
-              <li><Link to="/blogs/how-to-fix-high-ram-usage-windows-11">Fix High RAM Usage</Link></li>
-              <li><Link to="/blogs/is-ccleaner-safe-in-2026">Is CCleaner Safe?</Link></li>
-              <li><Link to="/blogs/ultimate-pc-maintenance-checklist-2026">PC Maintenance Checklist</Link></li>
-            </ul>
-          </div>
-
           {/* Trust & Legal Links */}
           <div className="footer-column">
             <h4>Trust & Disclosure</h4>
