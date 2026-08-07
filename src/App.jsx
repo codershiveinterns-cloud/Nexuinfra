@@ -8,6 +8,7 @@ import ArticleView from './pages/ArticleView';
 import CategoryView from './pages/CategoryView';
 import LegalPage from './pages/LegalPage';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Auto-scroll to top on navigation change
 function ScrollToTop() {
@@ -56,7 +57,7 @@ export default function App() {
             <Route path="/affiliate-disclosure" element={<LegalPage />} />
             <Route path="/privacy-policy" element={<LegalPage />} />
             <Route path="/terms" element={<LegalPage />} />
-            <Route path="/contact" element={<LegalPage />} />
+            <Route path="/contact" element={<Contact />} />
 
             {/* Fallback */}
             <Route path="*" element={<Home onOpenSpeedCheck={() => setSpeedCheckOpen(true)} />} />
