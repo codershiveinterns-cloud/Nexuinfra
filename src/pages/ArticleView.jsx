@@ -1,8 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ALL_ARTICLES } from '../data/siteData';
+import { AFFILIATE_CONFIG } from '../config/affiliate';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { Clock, User, ShieldCheck, ArrowRight, Layers, Zap, AlertTriangle } from 'lucide-react';
+import { Clock, User, ShieldCheck, ArrowRight, Layers, Zap, AlertTriangle, ShoppingCart } from 'lucide-react';
 
 export default function ArticleView() {
   const { slug } = useParams();
@@ -54,6 +55,58 @@ export default function ArticleView() {
               </span>
             </div>
           </div>
+
+          {/* BUY NOW CALLOUT BANNER FOR WISE CARE 365 REVIEW */}
+          {article.slug === 'wise-care-365-review' && (
+            <div className="wise-buy-now-card" style={{
+              backgroundColor: 'var(--color-surface)',
+              border: '1px solid var(--color-accent)',
+              borderRadius: 'var(--radius-lg)',
+              padding: '24px 28px',
+              marginBottom: '32px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '20px',
+              boxShadow: 'var(--shadow-md)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                  <span style={{ backgroundColor: 'rgba(56, 189, 248, 0.15)', color: 'var(--color-accent-light)', fontSize: '0.75rem', fontWeight: '700', padding: '4px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>
+                    OFFICIAL SOFTWARE DEAL
+                  </span>
+                  <span style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: '600' }}>
+                    ✓ Special Discount Available
+                  </span>
+                </div>
+                <h3 style={{ margin: '0 0 4px', fontSize: '1.3rem', color: 'var(--color-primary)' }}>
+                  Wise Care 365 PRO
+                </h3>
+                <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--color-muted)' }}>
+                  Complete 1-click PC speed-up, junk file cleaner & registry optimizer.
+                </p>
+              </div>
+
+              <a 
+                href={AFFILIATE_CONFIG.products.wiseCare365} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-warning btn-lg" 
+                style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '8px', 
+                  fontWeight: '700', 
+                  padding: '14px 28px',
+                  fontSize: '1.05rem',
+                  boxShadow: '0 4px 14px rgba(234, 179, 8, 0.3)' 
+                }}
+              >
+                <ShoppingCart size={18} /> Buy Now
+              </a>
+            </div>
+          )}
 
           {/* Render HTML Content */}
           <div 
