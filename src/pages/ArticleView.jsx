@@ -62,6 +62,56 @@ export default function ArticleView() {
             dangerouslySetInnerHTML={{ __html: article.content }} 
           />
 
+          {/* ARTICLE BOTTOM ACTION BUTTONS */}
+          <div className="article-action-buttons" style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '16px',
+            marginTop: '36px',
+            marginBottom: '36px',
+            paddingTop: '24px',
+            borderTop: '1px solid var(--color-border)'
+          }}>
+            <a 
+              href={AFFILIATE_CONFIG.products.wiseCare365} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+              style={{
+                borderRadius: '12px',
+                padding: '12px 28px',
+                fontWeight: '700',
+                fontSize: '0.98rem',
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: 'var(--shadow-sm)'
+              }}
+            >
+              Buy Now
+            </a>
+
+            <Link 
+              to={`/${article.category}`}
+              className="btn btn-outline"
+              style={{
+                borderRadius: '12px',
+                padding: '12px 24px',
+                fontWeight: '600',
+                fontSize: '0.95rem',
+                color: 'var(--color-primary)',
+                borderColor: 'var(--color-border)',
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              Back to {article.categoryLabel || 'Blogs'}
+            </Link>
+          </div>
+
           {/* INDEPENDENT TESTING & RECOMMENDED NEXT STEPS */}
           <div className="article-next-steps-card">
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
