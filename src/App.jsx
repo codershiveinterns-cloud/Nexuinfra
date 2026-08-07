@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import ArticleView from './pages/ArticleView';
 import CategoryView from './pages/CategoryView';
 import LegalPage from './pages/LegalPage';
+import About from './pages/About';
 
 // Auto-scroll to top on navigation change
 function ScrollToTop() {
@@ -51,7 +52,7 @@ export default function App() {
             <Route path="/blogs/:slug" element={<ArticleView />} />
 
             {/* Trust & Legal Pages */}
-            <Route path="/about" element={<LegalPage />} />
+            <Route path="/about" element={<About />} />
             <Route path="/affiliate-disclosure" element={<LegalPage />} />
             <Route path="/privacy-policy" element={<LegalPage />} />
             <Route path="/terms" element={<LegalPage />} />
