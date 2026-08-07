@@ -48,8 +48,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div>
-            © {new Date().getFullYear()} Nexuinfra. All Rights Reserved. 
-            Windows is a registered trademark of Microsoft Corporation.
+            © {new Date().getFullYear()} Nexuinfra. All Rights Reserved.
           </div>
         </div>
       </div>
