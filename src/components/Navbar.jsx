@@ -38,21 +38,6 @@ export default function Navbar({ onOpenSpeedCheck }) {
           <nav className="desktop-nav">
             <ul className="nav-links">
               <li className="nav-item">
-                <Link to="/reviews" className={`nav-link ${location.pathname.startsWith('/reviews') ? 'active' : ''}`}>
-                  <Layers size={15} /> Software Reviews <ChevronDown size={13} />
-                </Link>
-                <div className="dropdown-menu">
-                  <div className="dropdown-header">TOP BENCHMARKS</div>
-                  <Link to="/reviews/best-pc-cleaner-2026" className="dropdown-item">🏆 Best PC Cleaner 2026</Link>
-                  <Link to="/reviews/wise-care-365-review" className="dropdown-item">⭐ Wise Care 365 Full Review</Link>
-                  <Link to="/reviews/wisecleaner-vs-ccleaner" className="dropdown-item">⚔️ WiseCleaner vs CCleaner</Link>
-                  <Link to="/reviews/wisecleaner-vs-iobit" className="dropdown-item">⚔️ WiseCleaner vs IObit</Link>
-                  <Link to="/reviews/wise-data-recovery-review" className="dropdown-item">📁 Wise Data Recovery Review</Link>
-                  <Link to="/reviews/best-free-registry-cleaner" className="dropdown-item">🧹 Best Registry Cleaner</Link>
-                </div>
-              </li>
-
-              <li className="nav-item">
                 <Link to="/blog" className={`nav-link ${location.pathname.startsWith('/blog') ? 'active' : ''}`}>
                   <Zap size={15} /> Fix Slow PC <ChevronDown size={13} />
                 </Link>
@@ -152,7 +137,6 @@ export default function Navbar({ onOpenSpeedCheck }) {
 
             <div className="mobile-nav-group">
               <div className="mobile-group-title">NAVIGATION</div>
-              <Link to="/reviews" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">🏆 Software Reviews</Link>
               <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">⚡ Fix Slow PC</Link>
               <Link to="/problems" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">⚠️ Common PC Problems</Link>
               <Link to="/guides" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-item">📘 How-To Guides</Link>
