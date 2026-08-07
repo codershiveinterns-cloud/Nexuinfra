@@ -1338,10 +1338,19 @@ button {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 48px;
   margin-bottom: 48px;
+}
+
+.footer-brand {
+  max-width: 560px;
+}
+
+.footer-column {
+  min-width: 200px;
 }
 
 .footer-brand h3 {
@@ -1437,7 +1446,8 @@ button {
     grid-template-columns: 1fr;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 32px;
   }
   .article-main {
     padding: 24px 16px;
