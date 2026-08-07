@@ -72,25 +72,24 @@ export default function ArticleView() {
             paddingTop: '24px',
             borderTop: '1px solid var(--color-border)'
           }}>
-            <a 
-              href={AFFILIATE_CONFIG.products.wiseCare365} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <button 
+              type="button"
               className="btn btn-primary"
               style={{
                 borderRadius: '12px',
                 padding: '12px 28px',
                 fontWeight: '700',
                 fontSize: '0.98rem',
-                textDecoration: 'none',
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: 'var(--shadow-sm)'
+                boxShadow: 'var(--shadow-sm)',
+                cursor: 'pointer'
               }}
+              onClick={(e) => e.preventDefault()}
             >
               Buy Now
-            </a>
+            </button>
 
             <Link 
               to={`/${article.category}`}
