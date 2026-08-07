@@ -56,6 +56,12 @@ export default function ArticleView() {
             </div>
           </div>
 
+          {article.imageUrl && (
+            <div className="article-featured-image-wrapper">
+              <img src={article.imageUrl} alt={article.title} className="article-featured-image" />
+            </div>
+          )}
+
           {/* Render HTML Content */}
           <div 
             className="article-body"

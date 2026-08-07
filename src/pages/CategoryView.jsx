@@ -33,6 +33,11 @@ export default function CategoryView({ category: propCategory }) {
         {categoryArticles.map((art) => (
           <article key={art.id} className="article-card">
             <div>
+              {art.imageUrl && (
+                <Link to={`/${art.category}/${art.slug}`} className="card-thumbnail-wrapper">
+                  <img src={art.imageUrl} alt={art.title} className="card-thumbnail" loading="lazy" />
+                </Link>
+              )}
               <span className="card-category">{art.categoryLabel}</span>
               <h3 className="card-title">
                 <Link to={`/${art.category}/${art.slug}`}>{art.title}</Link>
