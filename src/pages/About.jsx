@@ -16,7 +16,7 @@ export default function About() {
           Transparent Software Deals & PC Optimization
         </h1>
         <p style={{ fontSize: '1.15rem', color: 'var(--color-muted)', lineHeight: '1.65', margin: 0 }}>
-          Nexuinfra was founded by <strong>DHARMPAL DHANKA</strong> to help users navigate the complicated landscape of security and system optimization software. We cut through the marketing hype to deliver direct advice, real benchmark data, and exclusive savings.
+          Nexuinfra was founded by <strong>Jaya Sai Nikhil Muvvala</strong> to help users navigate the complicated landscape of security and system optimization software. We cut through the marketing hype to deliver direct advice, real benchmark data, and exclusive savings.
         </p>
       </div>
 
@@ -120,13 +120,13 @@ export default function About() {
               OUR FOUNDER
             </div>
             <h3 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0 0 4px', lineHeight: '1.2' }}>
-              DHARMPAL DHANKA
+              Jaya Sai Nikhil Muvvala
             </h3>
             <div style={{ fontSize: '0.9rem', color: 'var(--color-muted)', fontWeight: '600', marginBottom: '20px' }}>
               Lead Systems Analyst & Founder
             </div>
             <p style={{ color: 'var(--color-muted)', fontSize: '0.94rem', lineHeight: '1.65', margin: 0 }}>
-              DHARMPAL DHANKA founded Nexuinfra in 2026 with a simple mission: to build a digital ecosystem that separates marketing hype from actual software performance. With extensive systems engineering experience, Dharmpal reviews every software recommendation to ensure it meets our strict transparency and security standards.
+              Jaya Sai Nikhil Muvvala founded Nexuinfra in 2026 with a simple mission: to build a digital ecosystem that separates marketing hype from actual software performance. With extensive systems engineering experience, Nikhil reviews every software recommendation to ensure it meets our strict transparency and security standards.
             </p>
           </div>
 
@@ -147,18 +147,18 @@ export default function About() {
               margin: '16px 0 24px' 
             }}>
               <div style={{ fontWeight: '700', fontSize: '1.05rem', color: 'white', lineHeight: '1.6' }}>
-                KOHIYA POST RADOLI
+                2213 McBride Ave, 2nd Floor
               </div>
               <div style={{ color: 'var(--color-muted)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-                TH. KOTKHAWDA DIST. JAIPUR 303908
+                Utica, NY 13502
               </div>
               <div style={{ color: '#38bdf8', fontWeight: '600', fontSize: '0.95rem', marginTop: '4px' }}>
-                RAJASTHAN, INDIA
+                UNITED STATES
               </div>
             </div>
 
             <p style={{ color: 'var(--color-muted)', fontSize: '0.85rem', lineHeight: '1.6', margin: 0 }}>
-              All legal notices, mailings, and partner audits should be addressed to our headquarters registered under Indian corporate business records.
+              All legal notices, mailings, and partner audits should be addressed to our headquarters registered corporate business records.
             </p>
           </div>
 

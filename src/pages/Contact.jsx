@@ -93,9 +93,9 @@ export default function Contact() {
                   Corporate Headquarters
                 </div>
                 <div style={{ color: 'var(--color-muted)', fontSize: '0.92rem', lineHeight: '1.5' }}>
-                  KOHIYA POST RADOLI<br />
-                  TH. KOTKHAWDA DIST. JAIPUR 303908<br />
-                  <span style={{ color: '#38bdf8', fontWeight: '600' }}>RAJASTHAN, INDIA</span>
+                  2213 McBride Ave, 2nd Floor<br />
+                  Utica, NY 13502<br />
+                  <span style={{ color: '#38bdf8', fontWeight: '600' }}>UNITED STATES</span>
                 </div>
               </div>
             </div>
