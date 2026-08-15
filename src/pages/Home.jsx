@@ -16,6 +16,8 @@ import {
 import { AFFILIATE_CONFIG } from '../config/affiliate';
 import { ALL_ARTICLES, CATEGORIES } from '../data/siteData';
 import RankingTable from '../components/RankingTable';
+import InteractiveFinder from '../components/InteractiveFinder';
+import RecommendationQuiz from '../components/RecommendationQuiz';
 
 export default function Home({ onOpenSpeedCheck }) {
   const featuredArticles = ALL_ARTICLES.slice(0, 3);
@@ -29,16 +31,15 @@ export default function Home({ onOpenSpeedCheck }) {
       <section className="hero-section text-center">
         <div className="container">
           <div className="hero-badge mx-auto">
-            <ShieldCheck size={16} /> Verified 2026 Windows Optimization Guide
+            <ShieldCheck size={16} /> Verified 2026 Infrastructure Guide
           </div>
           
           <h1 className="hero-title mx-auto">
-            Is Your PC Running Slow? Restore Original Speed in 1 Click
+            Find the Right Infrastructure for Your Business
           </h1>
 
           <p className="hero-subtitle mx-auto">
-            Unbiased PC cleaner reviews, safe registry tune-up benchmarks, and step-by-step 
-            Windows speed optimization guides tested on Windows 11, 10, 8, and 7.
+            Compare hosting, cloud platforms, VPS, security tools and other online infrastructure services — based on pricing, performance, features and real-world use cases.
           </p>
 
           <div className="hero-actions mx-auto" style={{ justifyContent: 'center' }}>
@@ -46,7 +47,13 @@ export default function Home({ onOpenSpeedCheck }) {
               to="/reviews" 
               className="btn btn-warning btn-lg"
             >
-              <Layers size={18} /> Explore Reviews & Comparisons <ArrowRight size={16} />
+              <Layers size={18} /> Compare Hosting <ArrowRight size={16} />
+            </Link>
+            <Link 
+              to="/blog" 
+              className="btn btn-outline btn-lg"
+            >
+              <Zap size={18} /> Explore Cloud <ArrowRight size={16} />
             </Link>
           </div>
         </div>
@@ -57,9 +64,9 @@ export default function Home({ onOpenSpeedCheck }) {
         <div className="container">
           <div className="trust-grid">
             <div className="trust-item">
-              <div className="trust-icon"><Layers size={22} /></div>
+              <div className="trust-icon"><CheckCircle size={22} /></div>
               <div>
-                <div className="trust-title">Independent Reviews</div>
+                <div className="trust-title">Independent comparisons</div>
                 <div className="trust-desc">Unbiased benchmarks & analysis</div>
               </div>
             </div>
@@ -67,29 +74,35 @@ export default function Home({ onOpenSpeedCheck }) {
             <div className="trust-item">
               <div className="trust-icon"><Award size={22} /></div>
               <div>
-                <div className="trust-title">Expert Comparison</div>
-                <div className="trust-desc">Side-by-side performance tests</div>
+                <div className="trust-title">Updated pricing</div>
+                <div className="trust-desc">Real-time costs & plans</div>
               </div>
             </div>
 
             <div className="trust-item">
-              <div className="trust-icon"><CheckCircle size={22} /></div>
+              <div className="trust-icon"><BookOpen size={22} /></div>
               <div>
-                <div className="trust-title">Windows 11 / 10 / 8 / 7</div>
-                <div className="trust-desc">Full 32-bit & 64-bit compatibility</div>
+                <div className="trust-title">Expert research</div>
+                <div className="trust-desc">In-depth performance testing</div>
               </div>
             </div>
 
             <div className="trust-item">
               <div className="trust-icon"><ShieldCheck size={22} /></div>
               <div>
-                <div className="trust-title">Zero Bloatware</div>
-                <div className="trust-desc">100% Virus & Spyware Free Tested</div>
+                <div className="trust-title">Affiliate disclosure</div>
+                <div className="trust-desc">100% transparent & honest</div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* INTERACTIVE RECOMMENDATION FINDER */}
+      <InteractiveFinder />
+
+      {/* 60-SECOND RECOMMENDATION QUIZ */}
+      <RecommendationQuiz />
 
       {/* RANKING TABLE SECTION */}
       <section className="ranking-section">

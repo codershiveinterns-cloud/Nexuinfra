@@ -78,24 +78,28 @@ export default function ArticleView() {
             paddingTop: '24px',
             borderTop: '1px solid var(--color-border)'
           }}>
-            <button 
-              type="button"
-              className="btn btn-primary"
-              style={{
-                borderRadius: '12px',
-                padding: '12px 28px',
-                fontWeight: '700',
-                fontSize: '0.98rem',
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: 'var(--shadow-sm)',
-                cursor: 'pointer'
-              }}
-              onClick={(e) => e.preventDefault()}
-            >
-              Buy Now
-            </button>
+            {article.slug === 'pchealthlens-review-scan-score-restore' && (
+              <a 
+                href={AFFILIATE_CONFIG.primaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+                style={{
+                  borderRadius: '12px',
+                  padding: '12px 28px',
+                  fontWeight: '700',
+                  fontSize: '0.98rem',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: 'var(--shadow-sm)',
+                  cursor: 'pointer',
+                  textDecoration: 'none'
+                }}
+              >
+                Buy Now
+              </a>
+            )}
 
             <Link 
               to={`/${article.category}`}

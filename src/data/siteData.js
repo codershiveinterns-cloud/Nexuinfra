@@ -1,3 +1,5 @@
+import { ARTICLES_CONTENT } from './articlesContent';
+
 export const RANKING_TABLE_DATA = [
   {
     rank: 1,
@@ -105,7 +107,7 @@ export const CATEGORIES = {
   }
 };
 
-export const ALL_ARTICLES = [
+const RAW_ARTICLES = [
   {
     "id": "best-pc-cleaner-2026",
     "category": "reviews",
@@ -557,3 +559,9 @@ export const ALL_ARTICLES = [
     "content": "\n      <h2>The Complete Windows PC Maintenance Routine</h2>\n      <p>Just like maintaining a car, performing small routine maintenance tasks on your PC prevents major system crashes.</p>\n    "
   }
 ];
+
+export const ALL_ARTICLES = RAW_ARTICLES.map((article) => ({
+  ...article,
+  content: ARTICLES_CONTENT[article.slug] || article.content
+}));
+
