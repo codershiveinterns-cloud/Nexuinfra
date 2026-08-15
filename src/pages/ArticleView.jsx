@@ -79,10 +79,9 @@ export default function ArticleView() {
             borderTop: '1px solid var(--color-border)'
           }}>
             {article.slug === 'pchealthlens-review-scan-score-restore' && (
-              <a 
-                href={AFFILIATE_CONFIG.primaryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                type="button"
+                disabled
                 className="btn btn-primary"
                 style={{
                   borderRadius: '12px',
@@ -93,12 +92,14 @@ export default function ArticleView() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   boxShadow: 'var(--shadow-sm)',
-                  cursor: 'pointer',
-                  textDecoration: 'none'
+                  cursor: 'not-allowed',
+                  opacity: 0.7,
+                  pointerEvents: 'none'
                 }}
+                onClick={(e) => e.preventDefault()}
               >
                 Buy Now
-              </a>
+              </button>
             )}
 
             <Link 
